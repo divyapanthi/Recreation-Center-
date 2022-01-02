@@ -90,7 +90,7 @@ namespace cw_recreation_center
             this.btnEmployee.TabIndex = 3;
             this.btnEmployee.Text = "Employee";
             this.btnEmployee.UseVisualStyleBackColor = false;
-            this.btnEmployee.Click += new System.EventHandler(this.btnEmployee_Click);
+            this.btnEmployee.Click += new System.EventHandler(this.BtnEmployee_Click);
             // 
             // btnAdmin
             // 

@@ -24,10 +24,10 @@ namespace cw_recreation_center
             this.Hide();
         }
 
-        private void btnEmployee_Click(object sender, EventArgs e)
+        private void BtnEmployee_Click(object sender, EventArgs e)
         {
-            Employee employee = new Employee();
-            employee.Show();
+            visitor_form form = new visitor_form();
+            form.Show();
         }
     }
 }

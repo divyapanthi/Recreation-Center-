@@ -38,6 +38,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -73,40 +74,54 @@
     <Compile Include="dashboard.Designer.cs">
       <DependentUpon>dashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="Employee.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Employee.Designer.cs">
-      <DependentUpon>Employee.cs</DependentUpon>
-    </Compile>
     <Compile Include="main.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="main.Designer.cs">
       <DependentUpon>main.cs</DependentUpon>
     </Compile>
-    <Compile Include="TicketForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="TicketForm.Designer.cs">
-      <DependentUpon>TicketForm.cs</DependentUpon>
-    </Compile>
+    <Compile Include="Report.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TicketPrice.cs" />
-    <Compile Include="Utility.cs" />
+    <Compile Include="Ticket.cs" />
+    <Compile Include="TicketList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TicketList.Designer.cs">
+      <DependentUpon>TicketList.cs</DependentUpon>
+    </Compile>
     <Compile Include="DailyReport.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="DailyReport.Designer.cs">
       <DependentUpon>DailyReport.cs</DependentUpon>
     </Compile>
+    <Compile Include="TicketUtility.cs" />
     <Compile Include="Visitor.cs" />
     <Compile Include="VisitorForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="VisitorForm.Designer.cs">
       <DependentUpon>VisitorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VisitorList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="VisitorList.Designer.cs">
+      <DependentUpon>VisitorList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VisitorUtility.cs" />
+    <Compile Include="WeeklyReportGrid.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WeeklyReportGrid.Designer.cs">
+      <DependentUpon>WeeklyReportGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WeeklyVisitorChart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WeeklyVisitorChart.Designer.cs">
+      <DependentUpon>WeeklyVisitorChart.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="addTicket.resx">
       <DependentUpon>addTicket.cs</DependentUpon>
@@ -120,14 +135,8 @@
     <EmbeddedResource Include="dashboard.resx">
       <DependentUpon>dashboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Employee.resx">
-      <DependentUpon>Employee.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="main.resx">
       <DependentUpon>main.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TicketForm.resx">
-      <DependentUpon>TicketForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -141,8 +150,20 @@
     <EmbeddedResource Include="DailyReport.resx">
       <DependentUpon>DailyReport.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="TicketList.resx">
+      <DependentUpon>TicketList.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="VisitorForm.resx">
       <DependentUpon>VisitorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VisitorList.resx">
+      <DependentUpon>VisitorList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WeeklyReportGrid.resx">
+      <DependentUpon>WeeklyReportGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WeeklyVisitorChart.resx">
+      <DependentUpon>WeeklyVisitorChart.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

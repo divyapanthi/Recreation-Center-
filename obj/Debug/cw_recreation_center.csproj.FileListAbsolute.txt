@@ -10,11 +10,14 @@ D:\.NET Projects\Coursework\cw_recreation_center\obj\Debug\cw_recreation_center.
 D:\.NET Projects\Coursework\cw_recreation_center\obj\Debug\cw_recreation_center.main.resources
 D:\.NET Projects\Coursework\cw_recreation_center\obj\Debug\cw_recreation_center.AdminLoginForm.resources
 D:\.NET Projects\Coursework\cw_recreation_center\obj\Debug\cw_recreation_center.AdminDashboard.resources
-D:\.NET Projects\Coursework\cw_recreation_center\obj\Debug\cw_recreation_center.ticket_form.resources
 D:\.NET Projects\Coursework\cw_recreation_center\obj\Debug\cw_recreation_center.addTicket.resources
 D:\.NET Projects\Coursework\cw_recreation_center\obj\Debug\cw_recreation_center.dashboard.resources
 D:\.NET Projects\Coursework\cw_recreation_center\bin\Debug\Newtonsoft.Json.dll
 D:\.NET Projects\Coursework\cw_recreation_center\bin\Debug\Newtonsoft.Json.xml
 D:\.NET Projects\Coursework\cw_recreation_center\obj\Debug\cw_recreation_center.csproj.CopyComplete
-D:\.NET Projects\Coursework\cw_recreation_center\obj\Debug\cw_recreation_center.Employee.resources
 D:\.NET Projects\Coursework\cw_recreation_center\obj\Debug\cw_recreation_center.ViewReport.resources
+D:\.NET Projects\Coursework\cw_recreation_center\obj\Debug\cw_recreation_center.csproj.AssemblyReference.cache
+D:\.NET Projects\Coursework\cw_recreation_center\obj\Debug\cw_recreation_center.TicketList.resources
+D:\.NET Projects\Coursework\cw_recreation_center\obj\Debug\cw_recreation_center.VisitorList.resources
+D:\.NET Projects\Coursework\cw_recreation_center\obj\Debug\cw_recreation_center.WeeklyReportGrid.resources
+D:\.NET Projects\Coursework\cw_recreation_center\obj\Debug\cw_recreation_center.WeeklyVisitorChart.resources

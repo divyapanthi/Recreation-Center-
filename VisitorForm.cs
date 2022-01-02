@@ -17,22 +17,29 @@ namespace cw_recreation_center
             InitializeComponent();
         }
 
-        private void btnClear_Click(object sender, EventArgs e)
+        private void BtnClear_Click(object sender, EventArgs e)
         {
-            txtName.Clear();
-            txtPhoneNum.Clear();
-            comboGroup.SelectedIndex = 0;
+            txtVisitorId.Text = null;
+            txtName.Text = null;
             child.Checked = false;
             adult.Checked = false;
+            comboDuration.SelectedIndex = -1;
+            comboDuration.Text = "--Select Duration --";
+            weekday.Checked = false;
+            weekend.Checked = false;
+            radioCheckIn.Checked = false;
+            radioCheckOut.Checked = false;
+            comboGroup.SelectedIndex = -1;
+            comboGroup.Text = "--Select Group --";
+            txtTicketPrice.Text = null;
         }
 
-        private void btnSave_Click(object sender, EventArgs e)
+        private void BtnSave_Click(object sender, EventArgs e)
         {
             try
             {
                 if (txtName.Text == "" ||
                     txtName.Text.Contains("[^0-9]") ||
-                    txtPhoneNum.Text == "" ||
                     comboGroup.SelectedIndex == 0 ||
                     child.Checked == false ||
                     adult.Checked == false)
@@ -41,35 +48,63 @@ namespace cw_recreation_center
                 }
                 else
                 {
-                    int visitorID;
-                    Visitor visitor = new Visitor();
-                    List<Visitor> listRC = visitor.List();
-                    if (listRC == null || listRC.Count == 0)
-                    {
-                        visitorID = 1;
+                    string id = txtVisitorId.Text;
+                    string visitorName = txtName.Text;
+                    string group = (string)comboGroup.SelectedItem;
+                    string duration = (string)comboDuration.SelectedItem;
+                    string ageGroup = "";
+                    string day = "";
+                    string Status = "";
 
-                    }
-                    else { visitorID = listRC.Count + 1; }
-
-                    string checkInTime = DateTime.Now.ToString();
-                    string name = txtName.Text;
-                    int ageGroup = comboGroup.SelectedIndex;
                     if (child.Checked)
                     {
-                        visitor.AgeGroup = "Child";
+                        ageGroup = "child";
                     }
-                    else if (ageGroup == 2)
+                    if (adult.Checked)
                     {
-                        visitor.AgeGroup = "Adult";
+                        ageGroup = "adult";
+                    }
+                    if (weekend.Checked)
+                    {
+                        day = "weekday";
+                    }
+                    if (weekend.Checked)
+                    {
+                        day = "holiday";
+                    }
+                    if (radioCheckIn.Checked)
+                    {
+                        Status = "CHECKEDIN";
+                    }
+                    if (radioCheckOut.Checked)
+                    {
+                        Status = "CHECKEDOUT";
+                    }
+                    var dateTime = DateTime.Now;
+                    var Date = dateTime.ToLongDateString();
+                    var visitorDate = dateTimePicker.Value.ToLongDateString();
+                    var CheckInTime = "";
+                    var CheckOutTime = "";
+                    if (Status.Equals("CHECKEDIN"))
+                    {
+                        CheckInTime = dateTime.ToShortTimeString();
+                    }
+                    if (Status.Equals("CHECKEDOUT"))
+                    {
+                        CheckOutTime = dateTime.ToShortTimeString();
                     }
 
-                    visitor.VisitorId = visitorID;
-                    visitor.VisitorName = txtName.Text;
-                    visitor.PhoneNum = txtPhoneNum.Text;
-                    visitor.Date = visitorCheckinDate.Value.Date;
-                    visitor.CheckInTime = checkInTime;
-                    visitor.GroupOf = int.Parse(comboGroup.Text);
-                    visitor.Add(visitor);
+                    Visitor visitor = new Visitor();
+                    visitor.VisitorId = id;
+                    visitor.GroupOf = group;
+                    visitor.AgeGroup = ageGroup;
+                    visitor.Day = day;
+                    visitor.Duration = duration;
+                    visitor.VisitorName = visitorName;
+                    visitor.Date = visitorDate;
+                    visitor.CheckInTime = CheckInTime;
+                    visitor.CheckOutTime = CheckOutTime;
+                    visitor.Status = Status;
 
 
                     MessageBox.Show("Visitor Added Successfully!");
@@ -81,9 +116,8 @@ namespace cw_recreation_center
             }
         }
 
-        private void viewVisitorList_Click(object sender, EventArgs e)
-        {
+     
 
-        }
+    
     }
 }

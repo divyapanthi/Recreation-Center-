@@ -1,8 +1,10 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -21,15 +23,36 @@ namespace cw_recreation_center
         {
             try
             {
-                TicketPrice ticket = new TicketPrice();
-                ticket.Group = comboGroupCount.Text;
-                ticket.Duration = int.Parse(comboDuration.Text);
-                ticket.Child_weekday = int.Parse(txtChildWeekday.Text);
-                ticket.Child_weekend = int.Parse(txtChildWeekend.Text);
-                ticket.Adult_weekday = int.Parse(txtAdultWeekday.Text);
-                ticket.Adult_weekend = int.Parse(txtAdultWeekend.Text);
-                ticket.Add(ticket);
-                BindGrid();
+                string id = ticketIdText.Text;
+                string group = (string)groupTxt.SelectedItem;
+                string duration = (string)durationTxt.SelectedItem;
+                string ageGroup = "";
+                String day = "";
+                if (child.Checked)
+                {
+                    ageGroup = "child";
+                }
+                if (adult.Checked)
+                {
+                    ageGroup = "adult";
+                }
+                if (weekday.Checked)
+                {
+                    day = "weekday";
+                }
+                if (holiday.Checked)
+                {
+                    day = "holiday";
+
+                }
+                Ticket ticket = new Ticket();
+                ticket.Id = id;
+                ticket.Group = group;
+                ticket.AgeGroup = ageGroup;
+                ticket.Day = day;
+                ticket.Duration = duration;
+                VaidationCheck(ticket);
+               
             }
             catch (Exception error)
             {
@@ -37,33 +60,59 @@ namespace cw_recreation_center
             }
         }
 
+
+        private void VaidationCheck(Ticket ticket)
+        {
+            if (!ticket.Id.Equals(""))
+            {
+                if (ticket.Duration != null)
+                {
+                    if (ticket.Group != null)
+                    {
+                        if (!ticket.AgeGroup.Equals(""))
+                        {
+                            if (!ticket.Day.Equals(""))
+                            {
+
+                                if (!ticketPriceTxt.Text.Equals(""))
+                                {
+                                    ticket.Run();
+                                    string datas = TicketUtility.ReadFromFile();
+                                    List<Ticket> ticketList = new List<Ticket>();
+                                    if (datas != null && datas != "")
+                                    {
+                                        ticketList = JsonConvert.DeserializeObject<List<Ticket>>(datas);
+                                    }
+                                    string ticketPrice = ticketPriceTxt.Text;
+                                    float TicketPrice = float.Parse(ticketPrice, CultureInfo.InvariantCulture.NumberFormat);
+                                    ticket.TicketPrice = TicketPrice;
+                                    ticketList.Add(ticket);
+                                    string data = JsonConvert.SerializeObject(ticketList);
+                                    TicketUtility.WriteToText(data);
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+
+        }
+
+
         private void BtnClear_Click(object sender, EventArgs e)
         {
-            txtChildWeekday.Text = "";
-            txtChildWeekend.Text = "";
-            txtAdultWeekday.Text = "";
-            txtAdultWeekend.Text = "";
-            comboDuration.SelectedIndex = -1;
-            comboDuration.Text = "--Select Duration --";
-            comboGroupCount.SelectedIndex = -1;
-            comboGroupCount.Text = "--Select Group --";
+            ticketIdText.Text = null;
+            child.Checked = false;
+            adult.Checked = false;
+            durationTxt.SelectedIndex = -1;
+            durationTxt.Text = "--Select Duration --";
+            weekday.Checked = false;
+            holiday.Checked = false;
+            groupTxt.SelectedIndex = -1;
+            groupTxt.Text = "--Select Group --";
         }
 
-        public void BindGrid()
-        {
-            TicketPrice ticket = new TicketPrice();
-            List<TicketPrice> listPrice = ticket.List();
-            DataTable tableData = Utility.ConvertToDataTable(listPrice);
-            PriceDataGridView.DataSource = tableData;
-
-        }
-
-        private void AddTicket_Load(object sender, EventArgs e)
-        {
-            comboDuration.SelectedIndex = -1;
-            comboDuration.Text = "--Select Duration --";
-            comboGroupCount.SelectedIndex = -1;
-            comboGroupCount.Text = "--Select Group --";
-        }
+      
     }
 }

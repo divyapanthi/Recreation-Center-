@@ -17,7 +17,7 @@ namespace cw_recreation_center
             InitializeComponent();
         }
 
-        private void btnLogin_Click(object sender, EventArgs e)
+        private void BtnLogin_Click(object sender, EventArgs e)
         {
             string username = txtUsername.Text; // fetching data from username field
             string password = txtPassword.Text; // fetching data form password field 
@@ -36,7 +36,7 @@ namespace cw_recreation_center
             }
         }
 
-        private void btnBack_Click(object sender, EventArgs e)
+        private void BtnBack_Click(object sender, EventArgs e)
         {
             main obj = new main();
             obj.Show();

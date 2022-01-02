@@ -9,34 +9,34 @@ namespace cw_recreation_center
 {
     class Visitor
     {
-        public int VisitorId { get; set; }
+        public Visitor()
+        {
+        }
+        public String VisitorId { get; set; }
         public String VisitorName { get; set; }
         public String PhoneNum { get; set; }
         public String AgeGroup { get; set; }
-        public int GroupOf { get; set; }
-        public int Duration { get; set; }
+        public String GroupOf { get; set; }
+
+        public int VisitorsNo { get; set; }
+        public String Duration { get; set; }
         public double Price { get; set; }
-        public DateTime Date { get; set; }
+        public String Date { get; set; }
+        public String Day { get; set; }
+
+        public String Status { get; set; }
         public String CheckInTime { get; set; }
-        public DateTime CheckOutTime { get; set; }
 
+        public String CheckOutTime { get; set; }
 
-        public void Add(Visitor visitor)
+        public float TicketPrice { get; set; }
+        public void Run()
         {
-            string data = JsonConvert.SerializeObject(visitor, Formatting.None);
-            Console.WriteLine(data);
-            Utility.WriteToText("VisitorDetails.json", data);
-        }
-
-        public List<Visitor> List()
-        {
-            string d = Utility.ReadFromFile("VisitorDetails.json");
-            if (d != null)
-            {
-                List<Visitor> list = JsonConvert.DeserializeObject<List<Visitor>>(d);
-                return list;
-            }
-            return null;
+            Console.WriteLine(VisitorId);
+            Console.WriteLine(Duration);
+            Console.WriteLine(Day);
+            Console.WriteLine(GroupOf);
+            Console.WriteLine(AgeGroup);
         }
     }
 }
