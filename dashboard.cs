@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace cw_recreation_center
 {
-    public partial class Dashboard : UserControl
+    public partial class Dashboard : Form
     {
         public Dashboard()
         {

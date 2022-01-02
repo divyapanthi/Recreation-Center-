@@ -31,28 +31,28 @@ namespace cw_recreation_center
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminDashboard));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.weeklyVisitorReport = new System.Windows.Forms.Button();
+            this.WeeklyVisitorChart = new System.Windows.Forms.Button();
+            this.dailyVisitorReport = new System.Windows.Forms.Button();
             this.btnAddTicket = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.btnLogout = new System.Windows.Forms.Button();
             this.btnTicketList = new System.Windows.Forms.Button();
             this.btnVisitorList = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.dashboard1 = new cw_recreation_center.Dashboard();
-            this.addTicket1 = new cw_recreation_center.AddTicket();
-            this.addTicket2 = new cw_recreation_center.AddTicket();
+            this.panelDashboard = new System.Windows.Forms.Panel();
+            this.panelAddTicket = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panelDashboard.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.LightBlue;
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.weeklyVisitorReport);
+            this.panel1.Controls.Add(this.WeeklyVisitorChart);
+            this.panel1.Controls.Add(this.dailyVisitorReport);
             this.panel1.Controls.Add(this.btnAddTicket);
             this.panel1.Controls.Add(this.tableLayoutPanel1);
             this.panel1.Controls.Add(this.btnLogout);
@@ -63,38 +63,41 @@ namespace cw_recreation_center
             this.panel1.Size = new System.Drawing.Size(201, 722);
             this.panel1.TabIndex = 0;
             // 
-            // button3
+            // weeklyVisitorReport
             // 
-            this.button3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button3.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(0, 487);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(198, 58);
-            this.button3.TabIndex = 9;
-            this.button3.Text = "Weekly Visitor Report Grid";
-            this.button3.UseVisualStyleBackColor = false;
+            this.weeklyVisitorReport.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.weeklyVisitorReport.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.weeklyVisitorReport.Location = new System.Drawing.Point(0, 487);
+            this.weeklyVisitorReport.Name = "weeklyVisitorReport";
+            this.weeklyVisitorReport.Size = new System.Drawing.Size(198, 58);
+            this.weeklyVisitorReport.TabIndex = 9;
+            this.weeklyVisitorReport.Text = "Weekly Visitor Report Grid";
+            this.weeklyVisitorReport.UseVisualStyleBackColor = false;
+            this.weeklyVisitorReport.Click += new System.EventHandler(this.weeklyVisitorReport_Click);
             // 
-            // button2
+            // WeeklyVisitorChart
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(0, 569);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(198, 58);
-            this.button2.TabIndex = 8;
-            this.button2.Text = "Weekly Visitor Chart";
-            this.button2.UseVisualStyleBackColor = false;
+            this.WeeklyVisitorChart.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.WeeklyVisitorChart.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.WeeklyVisitorChart.Location = new System.Drawing.Point(0, 569);
+            this.WeeklyVisitorChart.Name = "WeeklyVisitorChart";
+            this.WeeklyVisitorChart.Size = new System.Drawing.Size(198, 58);
+            this.WeeklyVisitorChart.TabIndex = 8;
+            this.WeeklyVisitorChart.Text = "Weekly Visitor Chart";
+            this.WeeklyVisitorChart.UseVisualStyleBackColor = false;
+            this.WeeklyVisitorChart.Click += new System.EventHandler(this.WeeklyVisitorChart_Click);
             // 
-            // button1
+            // dailyVisitorReport
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(0, 409);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(198, 58);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Daily Visitor Report";
-            this.button1.UseVisualStyleBackColor = false;
+            this.dailyVisitorReport.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dailyVisitorReport.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dailyVisitorReport.Location = new System.Drawing.Point(0, 409);
+            this.dailyVisitorReport.Name = "dailyVisitorReport";
+            this.dailyVisitorReport.Size = new System.Drawing.Size(198, 58);
+            this.dailyVisitorReport.TabIndex = 7;
+            this.dailyVisitorReport.Text = "Daily Visitor Report";
+            this.dailyVisitorReport.UseVisualStyleBackColor = false;
+            this.dailyVisitorReport.Click += new System.EventHandler(this.dailyVisitorReport_Click);
             // 
             // btnAddTicket
             // 
@@ -113,7 +116,7 @@ namespace cw_recreation_center
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 92.5F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 7.5F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 37F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 39F));
             this.tableLayoutPanel1.Location = new System.Drawing.Point(220, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
@@ -143,12 +146,13 @@ namespace cw_recreation_center
             this.btnTicketList.TabIndex = 3;
             this.btnTicketList.Text = "TicketList";
             this.btnTicketList.UseVisualStyleBackColor = false;
+            this.btnTicketList.Click += new System.EventHandler(this.btnTicketList_Click);
             // 
             // btnVisitorList
             // 
             this.btnVisitorList.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnVisitorList.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVisitorList.Location = new System.Drawing.Point(-3, 263);
+            this.btnVisitorList.Location = new System.Drawing.Point(-3, 273);
             this.btnVisitorList.Name = "btnVisitorList";
             this.btnVisitorList.Size = new System.Drawing.Size(204, 57);
             this.btnVisitorList.TabIndex = 2;
@@ -166,46 +170,35 @@ namespace cw_recreation_center
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // dashboard1
+            // panelDashboard
             // 
-            this.dashboard1.Location = new System.Drawing.Point(195, 12);
-            this.dashboard1.Name = "dashboard1";
-            this.dashboard1.Size = new System.Drawing.Size(886, 722);
-            this.dashboard1.TabIndex = 3;
+            this.panelDashboard.AutoScroll = true;
+            this.panelDashboard.Controls.Add(this.panelAddTicket);
+            this.panelDashboard.Location = new System.Drawing.Point(204, 0);
+            this.panelDashboard.Name = "panelDashboard";
+            this.panelDashboard.Size = new System.Drawing.Size(877, 722);
+            this.panelDashboard.TabIndex = 2;
             // 
-            // addTicket1
+            // panelAddTicket
             // 
-            this.addTicket1.BackColor = System.Drawing.Color.Transparent;
-            this.addTicket1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.addTicket1.Location = new System.Drawing.Point(195, 0);
-            this.addTicket1.Name = "addTicket1";
-            this.addTicket1.Size = new System.Drawing.Size(886, 615);
-            this.addTicket1.TabIndex = 2;
-            // 
-            // addTicket2
-            // 
-            this.addTicket2.BackColor = System.Drawing.Color.PowderBlue;
-            this.addTicket2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.addTicket2.Location = new System.Drawing.Point(195, 0);
-            this.addTicket2.Name = "addTicket2";
-            this.addTicket2.Size = new System.Drawing.Size(886, 722);
-            this.addTicket2.TabIndex = 4;
+            this.panelAddTicket.Location = new System.Drawing.Point(0, 0);
+            this.panelAddTicket.Name = "panelAddTicket";
+            this.panelAddTicket.Size = new System.Drawing.Size(874, 719);
+            this.panelAddTicket.TabIndex = 0;
             // 
             // AdminDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1079, 722);
-            this.Controls.Add(this.addTicket2);
-            this.Controls.Add(this.dashboard1);
-            this.Controls.Add(this.addTicket1);
+            this.Controls.Add(this.panelDashboard);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
             this.Name = "AdminDashboard";
             this.Text = "AdminDashboard";
-            this.Load += new System.EventHandler(this.AdminDashboard_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panelDashboard.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -219,11 +212,10 @@ namespace cw_recreation_center
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnAddTicket;
-        private AddTicket addTicket1;
-        private Dashboard dashboard1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private AddTicket addTicket2;
+        private System.Windows.Forms.Button weeklyVisitorReport;
+        private System.Windows.Forms.Button WeeklyVisitorChart;
+        private System.Windows.Forms.Button dailyVisitorReport;
+        private System.Windows.Forms.Panel panelDashboard;
+        private System.Windows.Forms.Panel panelAddTicket;
     }
 }

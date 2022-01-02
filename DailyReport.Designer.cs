@@ -1,14 +1,14 @@
 ﻿
 namespace cw_recreation_center
 {
-    partial class ViewReport
+    partial class DailyReport
     {
-        /// <summary> 
+        /// <summary>
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary> 
+        /// <summary>
         /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
@@ -21,54 +21,31 @@ namespace cw_recreation_center
             base.Dispose(disposing);
         }
 
-        #region Component Designer generated code
+        #region Windows Form Designer generated code
 
-        /// <summary> 
-        /// Required method for Designer support - do not modify 
+        /// <summary>
+        /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.labelChooseDate = new System.Windows.Forms.Label();
             this.dateTimePickerChoose = new System.Windows.Forms.DateTimePicker();
             this.dataGridViewVisitor = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewVisitor)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewVisitor)).BeginInit();
             this.SuspendLayout();
             // 
-            // labelChooseDate
+            // panel1
             // 
-            this.labelChooseDate.AutoSize = true;
-            this.labelChooseDate.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelChooseDate.Location = new System.Drawing.Point(51, 93);
-            this.labelChooseDate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.labelChooseDate.Name = "labelChooseDate";
-            this.labelChooseDate.Size = new System.Drawing.Size(121, 19);
-            this.labelChooseDate.TabIndex = 5;
-            this.labelChooseDate.Text = "Choose Date:";
-            // 
-            // dateTimePickerChoose
-            // 
-            this.dateTimePickerChoose.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePickerChoose.Location = new System.Drawing.Point(197, 93);
-            this.dateTimePickerChoose.Margin = new System.Windows.Forms.Padding(4);
-            this.dateTimePickerChoose.Name = "dateTimePickerChoose";
-            this.dateTimePickerChoose.Size = new System.Drawing.Size(265, 23);
-            this.dateTimePickerChoose.TabIndex = 4;
-            this.dateTimePickerChoose.ValueChanged += new System.EventHandler(this.DateTimePickerChoose_ValueChanged);
-            // 
-            // dataGridViewVisitor
-            // 
-            this.dataGridViewVisitor.BackgroundColor = System.Drawing.Color.AliceBlue;
-            this.dataGridViewVisitor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewVisitor.Location = new System.Drawing.Point(45, 150);
-            this.dataGridViewVisitor.Margin = new System.Windows.Forms.Padding(4);
-            this.dataGridViewVisitor.Name = "dataGridViewVisitor";
-            this.dataGridViewVisitor.RowHeadersWidth = 51;
-            this.dataGridViewVisitor.Size = new System.Drawing.Size(821, 278);
-            this.dataGridViewVisitor.TabIndex = 3;
+            this.panel1.BackColor = System.Drawing.Color.DarkTurquoise;
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Location = new System.Drawing.Point(-2, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(848, 62);
+            this.panel1.TabIndex = 11;
             // 
             // label1
             // 
@@ -83,29 +60,52 @@ namespace cw_recreation_center
             this.label1.TabIndex = 6;
             this.label1.Text = "Daily Report";
             // 
-            // panel1
+            // labelChooseDate
             // 
-            this.panel1.BackColor = System.Drawing.Color.DarkTurquoise;
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(937, 62);
-            this.panel1.TabIndex = 7;
+            this.labelChooseDate.AutoSize = true;
+            this.labelChooseDate.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelChooseDate.Location = new System.Drawing.Point(66, 93);
+            this.labelChooseDate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelChooseDate.Name = "labelChooseDate";
+            this.labelChooseDate.Size = new System.Drawing.Size(121, 19);
+            this.labelChooseDate.TabIndex = 10;
+            this.labelChooseDate.Text = "Choose Date:";
             // 
-            // ViewReport
+            // dateTimePickerChoose
+            // 
+            this.dateTimePickerChoose.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePickerChoose.Location = new System.Drawing.Point(195, 93);
+            this.dateTimePickerChoose.Margin = new System.Windows.Forms.Padding(4);
+            this.dateTimePickerChoose.Name = "dateTimePickerChoose";
+            this.dateTimePickerChoose.Size = new System.Drawing.Size(176, 23);
+            this.dateTimePickerChoose.TabIndex = 9;
+            // 
+            // dataGridViewVisitor
+            // 
+            this.dataGridViewVisitor.BackgroundColor = System.Drawing.Color.AliceBlue;
+            this.dataGridViewVisitor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewVisitor.Location = new System.Drawing.Point(43, 150);
+            this.dataGridViewVisitor.Margin = new System.Windows.Forms.Padding(4);
+            this.dataGridViewVisitor.Name = "dataGridViewVisitor";
+            this.dataGridViewVisitor.RowHeadersWidth = 51;
+            this.dataGridViewVisitor.Size = new System.Drawing.Size(756, 278);
+            this.dataGridViewVisitor.TabIndex = 8;
+            // 
+            // DailyReport
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ClientSize = new System.Drawing.Size(832, 500);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.labelChooseDate);
             this.Controls.Add(this.dateTimePickerChoose);
             this.Controls.Add(this.dataGridViewVisitor);
-            this.Name = "ViewReport";
-            this.Size = new System.Drawing.Size(907, 489);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewVisitor)).EndInit();
+            this.Name = "DailyReport";
+            this.Text = "DailyReport";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewVisitor)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -113,10 +113,10 @@ namespace cw_recreation_center
 
         #endregion
 
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label labelChooseDate;
         private System.Windows.Forms.DateTimePicker dateTimePickerChoose;
         private System.Windows.Forms.DataGridView dataGridViewVisitor;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel1;
     }
 }

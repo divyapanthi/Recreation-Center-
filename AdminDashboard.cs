@@ -26,23 +26,53 @@ namespace cw_recreation_center
 
         private void BtnAddTicket_Click(object sender, EventArgs e)
         {
-            SetActivePanel(addTicket1);
+            openChildForm(new AddTicket());
         }
 
-        public void SetActivePanel(UserControl userControl) {
-            dashboard1.Visible = false;
-            addTicket1.Visible = false;
-            userControl.Visible = true;
-        }
 
-        private void AdminDashboard_Load(object sender, EventArgs e)
-        {
-            SetActivePanel(dashboard1);
-        }
 
         private void btnVisitorList_Click(object sender, EventArgs e)
         {
+            openChildForm(new VisitorList());
 
+        }
+
+        private void openChildForm(Form childForm)
+        {
+            if (activeForm != null)
+                activeForm.Close();
+            activeForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            panelDashboard.Controls.Add(childForm);
+            panelDashboard.Tag = childForm;
+            panelAddTicket.Controls.Add(childForm);
+            panelAddTicket.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
+        }
+
+        private Form activeForm = null;
+
+        private void btnTicketList_Click(object sender, EventArgs e)
+        {
+            openChildForm(new TicketList());
+        }
+
+        private void dailyVisitorReport_Click(object sender, EventArgs e)
+        {
+            openChildForm(new DailyReport());
+        }
+
+        private void weeklyVisitorReport_Click(object sender, EventArgs e)
+        {
+            openChildForm(new WeeklyReportGrid());
+        }
+
+        private void WeeklyVisitorChart_Click(object sender, EventArgs e)
+        {
+            openChildForm(new WeeklyVisitorChart());
         }
     }
 }

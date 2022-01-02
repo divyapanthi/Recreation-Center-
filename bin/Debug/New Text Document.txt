@@ -1,0 +1,1 @@
+[{"VisitorId":"1","VisitorName":"afa","PhoneNum":null,"AgeGroup":"adult","GroupOf":"Group of 5 ","VisitorsNo":5,"Duration":"2 hour ","Price":0.0,"Date":"Friday, January 7, 2022","Day":"weekday","Status":"CHECKEDIN","CheckInTime":"11:27 PM","CheckOutTime":"","TicketPrice":0.0}]

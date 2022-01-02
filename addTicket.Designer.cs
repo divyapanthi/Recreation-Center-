@@ -3,12 +3,12 @@ namespace cw_recreation_center
 {
     partial class AddTicket
     {
-        /// <summary> 
+        /// <summary>
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary> 
+        /// <summary>
         /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
@@ -21,17 +21,14 @@ namespace cw_recreation_center
             base.Dispose(disposing);
         }
 
-        #region Component Designer generated code
+        #region Windows Form Designer generated code
 
-        /// <summary> 
-        /// Required method for Designer support - do not modify 
+        /// <summary>
+        /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.btnSave = new System.Windows.Forms.Button();
-            this.btnClear = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.ticketPriceTxt = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -48,77 +45,44 @@ namespace cw_recreation_center
             this.label5 = new System.Windows.Forms.Label();
             this.ticketId = new System.Windows.Forms.Label();
             this.ticketIdText = new System.Windows.Forms.TextBox();
+            this.btnClear = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(30, 12);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(96, 39);
-            this.label1.TabIndex = 18;
-            this.label1.Text = "Price";
-            // 
-            // btnSave
-            // 
-            this.btnSave.BackColor = System.Drawing.Color.Green;
-            this.btnSave.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnSave.Location = new System.Drawing.Point(210, 537);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(105, 47);
-            this.btnSave.TabIndex = 34;
-            this.btnSave.Text = "Save";
-            this.btnSave.UseVisualStyleBackColor = false;
-            this.btnSave.Click += new System.EventHandler(this.BtnSave_Click);
-            // 
-            // btnClear
-            // 
-            this.btnClear.BackColor = System.Drawing.Color.Brown;
-            this.btnClear.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClear.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnClear.Location = new System.Drawing.Point(381, 537);
-            this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(105, 47);
-            this.btnClear.TabIndex = 36;
-            this.btnClear.Text = "Clear";
-            this.btnClear.UseVisualStyleBackColor = false;
-            this.btnClear.Click += new System.EventHandler(this.BtnClear_Click);
-            // 
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(33, 433);
+            this.label2.Location = new System.Drawing.Point(56, 431);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(135, 39);
-            this.label2.TabIndex = 56;
+            this.label2.TabIndex = 71;
             this.label2.Text = "TicketPrice";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // ticketPriceTxt
             // 
             this.ticketPriceTxt.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ticketPriceTxt.Location = new System.Drawing.Point(240, 433);
+            this.ticketPriceTxt.Location = new System.Drawing.Point(263, 431);
             this.ticketPriceTxt.Margin = new System.Windows.Forms.Padding(4);
             this.ticketPriceTxt.Multiline = true;
             this.ticketPriceTxt.Name = "ticketPriceTxt";
             this.ticketPriceTxt.Size = new System.Drawing.Size(336, 38);
-            this.ticketPriceTxt.TabIndex = 55;
+            this.ticketPriceTxt.TabIndex = 70;
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.weekday);
             this.groupBox1.Controls.Add(this.weekend);
-            this.groupBox1.Location = new System.Drawing.Point(240, 268);
+            this.groupBox1.Location = new System.Drawing.Point(263, 266);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(336, 59);
-            this.groupBox1.TabIndex = 54;
+            this.groupBox1.TabIndex = 69;
             this.groupBox1.TabStop = false;
             // 
             // weekday
@@ -149,12 +113,12 @@ namespace cw_recreation_center
             // 
             this.groupBox2.Controls.Add(this.child);
             this.groupBox2.Controls.Add(this.adult);
-            this.groupBox2.Location = new System.Drawing.Point(242, 142);
+            this.groupBox2.Location = new System.Drawing.Point(265, 140);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox2.Size = new System.Drawing.Size(334, 46);
-            this.groupBox2.TabIndex = 53;
+            this.groupBox2.TabIndex = 68;
             this.groupBox2.TabStop = false;
             // 
             // child
@@ -208,11 +172,11 @@ namespace cw_recreation_center
             "Group of 30",
             "Group of 50",
             "Group of 100"});
-            this.groupTxt.Location = new System.Drawing.Point(240, 355);
+            this.groupTxt.Location = new System.Drawing.Point(263, 353);
             this.groupTxt.Margin = new System.Windows.Forms.Padding(4);
             this.groupTxt.Name = "groupTxt";
             this.groupTxt.Size = new System.Drawing.Size(336, 29);
-            this.groupTxt.TabIndex = 52;
+            this.groupTxt.TabIndex = 67;
             this.groupTxt.Text = "-- Select Group --";
             // 
             // durationTxt
@@ -226,85 +190,118 @@ namespace cw_recreation_center
             "3 hour ",
             "4 hour ",
             "Unlimited"});
-            this.durationTxt.Location = new System.Drawing.Point(240, 215);
+            this.durationTxt.Location = new System.Drawing.Point(263, 213);
             this.durationTxt.Margin = new System.Windows.Forms.Padding(4);
             this.durationTxt.Name = "durationTxt";
             this.durationTxt.Size = new System.Drawing.Size(345, 29);
-            this.durationTxt.TabIndex = 51;
+            this.durationTxt.TabIndex = 66;
             this.durationTxt.Text = "-- Duration --";
             this.durationTxt.UseWaitCursor = true;
             // 
             // label4
             // 
             this.label4.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(33, 142);
+            this.label4.Location = new System.Drawing.Point(56, 140);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(135, 39);
-            this.label4.TabIndex = 50;
+            this.label4.TabIndex = 65;
             this.label4.Text = "Age Group:";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label3
             // 
             this.label3.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(33, 209);
+            this.label3.Location = new System.Drawing.Point(56, 207);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(135, 39);
-            this.label3.TabIndex = 49;
+            this.label3.TabIndex = 64;
             this.label3.Text = "Duration:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // dayLabel
             // 
             this.dayLabel.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dayLabel.Location = new System.Drawing.Point(4, 277);
+            this.dayLabel.Location = new System.Drawing.Point(46, 275);
             this.dayLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.dayLabel.Name = "dayLabel";
             this.dayLabel.Size = new System.Drawing.Size(135, 39);
-            this.dayLabel.TabIndex = 48;
+            this.dayLabel.TabIndex = 63;
             this.dayLabel.Text = "Day:";
             this.dayLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label5
             // 
             this.label5.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(14, 355);
+            this.label5.Location = new System.Drawing.Point(46, 353);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(135, 39);
-            this.label5.TabIndex = 47;
+            this.label5.TabIndex = 62;
             this.label5.Text = "Group:";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // ticketId
             // 
             this.ticketId.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ticketId.Location = new System.Drawing.Point(33, 79);
+            this.ticketId.Location = new System.Drawing.Point(56, 77);
             this.ticketId.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ticketId.Name = "ticketId";
             this.ticketId.Size = new System.Drawing.Size(135, 39);
-            this.ticketId.TabIndex = 46;
+            this.ticketId.TabIndex = 61;
             this.ticketId.Text = "Ticket Id:";
             this.ticketId.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // ticketIdText
             // 
             this.ticketIdText.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ticketIdText.Location = new System.Drawing.Point(240, 79);
+            this.ticketIdText.Location = new System.Drawing.Point(263, 77);
             this.ticketIdText.Margin = new System.Windows.Forms.Padding(4);
             this.ticketIdText.Multiline = true;
             this.ticketIdText.Name = "ticketIdText";
             this.ticketIdText.Size = new System.Drawing.Size(336, 38);
-            this.ticketIdText.TabIndex = 45;
+            this.ticketIdText.TabIndex = 60;
+            // 
+            // btnClear
+            // 
+            this.btnClear.BackColor = System.Drawing.Color.Brown;
+            this.btnClear.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClear.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnClear.Location = new System.Drawing.Point(404, 535);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(105, 47);
+            this.btnClear.TabIndex = 59;
+            this.btnClear.Text = "Clear";
+            this.btnClear.UseVisualStyleBackColor = false;
+            // 
+            // btnSave
+            // 
+            this.btnSave.BackColor = System.Drawing.Color.Green;
+            this.btnSave.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnSave.Location = new System.Drawing.Point(233, 535);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(105, 47);
+            this.btnSave.TabIndex = 58;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(53, 10);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(96, 39);
+            this.label1.TabIndex = 57;
+            this.label1.Text = "Price";
             // 
             // AddTicket
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Snow;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(800, 656);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.ticketPriceTxt);
             this.Controls.Add(this.groupBox1);
@@ -321,7 +318,7 @@ namespace cw_recreation_center
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.label1);
             this.Name = "AddTicket";
-            this.Size = new System.Drawing.Size(939, 719);
+            this.Text = "AddTicket";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -332,9 +329,7 @@ namespace cw_recreation_center
         }
 
         #endregion
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnSave;
-        private System.Windows.Forms.Button btnClear;
+
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox ticketPriceTxt;
         private System.Windows.Forms.GroupBox groupBox1;
@@ -351,5 +346,8 @@ namespace cw_recreation_center
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label ticketId;
         private System.Windows.Forms.TextBox ticketIdText;
+        private System.Windows.Forms.Button btnClear;
+        private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.Label label1;
     }
 }
