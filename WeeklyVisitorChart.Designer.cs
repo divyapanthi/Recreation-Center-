@@ -48,7 +48,7 @@ namespace cw_recreation_center
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(943, 62);
+            this.panel1.Size = new System.Drawing.Size(913, 62);
             this.panel1.TabIndex = 10;
             // 
             // label1
@@ -57,7 +57,7 @@ namespace cw_recreation_center
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Azure;
-            this.label1.Location = new System.Drawing.Point(374, 15);
+            this.label1.Location = new System.Drawing.Point(276, 17);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(286, 34);
@@ -91,7 +91,7 @@ namespace cw_recreation_center
             this.weeklyVisitorReportChart.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.weeklyVisitorReportChart.Legends.Add(legend1);
-            this.weeklyVisitorReportChart.Location = new System.Drawing.Point(58, 149);
+            this.weeklyVisitorReportChart.Location = new System.Drawing.Point(22, 149);
             this.weeklyVisitorReportChart.Name = "weeklyVisitorReportChart";
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";
@@ -101,7 +101,7 @@ namespace cw_recreation_center
             series2.Name = "Number of Visitor";
             this.weeklyVisitorReportChart.Series.Add(series1);
             this.weeklyVisitorReportChart.Series.Add(series2);
-            this.weeklyVisitorReportChart.Size = new System.Drawing.Size(746, 443);
+            this.weeklyVisitorReportChart.Size = new System.Drawing.Size(841, 521);
             this.weeklyVisitorReportChart.TabIndex = 15;
             this.weeklyVisitorReportChart.Text = "chart1";
             // 
@@ -115,7 +115,7 @@ namespace cw_recreation_center
             this.Controls.Add(this.labelChooseDate);
             this.Controls.Add(this.dateTimePickerChoose);
             this.Name = "WeeklyVisitorChart";
-            this.Size = new System.Drawing.Size(916, 617);
+            this.Size = new System.Drawing.Size(916, 737);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.weeklyVisitorReportChart)).EndInit();

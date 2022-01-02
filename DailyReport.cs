@@ -19,12 +19,18 @@ namespace cw_recreation_center
             LoadGrid();
         }
 
-        private void LoadGrid()
+        private List<Visitor> LoadGrid()
         {
-            string data = VisitorUtility.ReadFromFile();
-            List<Visitor> visitorList = JsonConvert.DeserializeObject<List<Visitor>>(data);
+            string datas = VisitorUtility.ReadFromFile();
+            List<Visitor> visitors = new List<Visitor>();
+            if (datas != null && datas != "")
+            {
+                visitors = JsonConvert.DeserializeObject<List<Visitor>>(datas);
+            }
+            return visitors;
 
-            var groupedData = visitorList.Where(a => a.Date == (dateTimePickerChoose.Value.ToLongDateString())).
+
+            var groupedData = visitors.Where(a => a.Date == (dateTimePickerChoose.Value.ToLongDateString())).
                 GroupBy(a => new { a.AgeGroup, a.GroupOf }).Select(
                     n => new {
                         Date = dateTimePickerChoose.Value.ToLongDateString(),

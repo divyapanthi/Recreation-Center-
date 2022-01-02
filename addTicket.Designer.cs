@@ -36,7 +36,7 @@ namespace cw_recreation_center
             this.ticketPriceTxt = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.weekday = new System.Windows.Forms.RadioButton();
-            this.holiday = new System.Windows.Forms.RadioButton();
+            this.weekend = new System.Windows.Forms.RadioButton();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.child = new System.Windows.Forms.RadioButton();
             this.adult = new System.Windows.Forms.RadioButton();
@@ -67,7 +67,7 @@ namespace cw_recreation_center
             this.btnSave.BackColor = System.Drawing.Color.Green;
             this.btnSave.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnSave.Location = new System.Drawing.Point(310, 443);
+            this.btnSave.Location = new System.Drawing.Point(210, 537);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(105, 47);
             this.btnSave.TabIndex = 34;
@@ -80,7 +80,7 @@ namespace cw_recreation_center
             this.btnClear.BackColor = System.Drawing.Color.Brown;
             this.btnClear.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClear.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnClear.Location = new System.Drawing.Point(446, 443);
+            this.btnClear.Location = new System.Drawing.Point(381, 537);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(105, 47);
             this.btnClear.TabIndex = 36;
@@ -91,7 +91,7 @@ namespace cw_recreation_center
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(33, 383);
+            this.label2.Location = new System.Drawing.Point(33, 433);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(135, 39);
@@ -102,22 +102,22 @@ namespace cw_recreation_center
             // ticketPriceTxt
             // 
             this.ticketPriceTxt.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ticketPriceTxt.Location = new System.Drawing.Point(240, 383);
+            this.ticketPriceTxt.Location = new System.Drawing.Point(240, 433);
             this.ticketPriceTxt.Margin = new System.Windows.Forms.Padding(4);
             this.ticketPriceTxt.Multiline = true;
             this.ticketPriceTxt.Name = "ticketPriceTxt";
-            this.ticketPriceTxt.Size = new System.Drawing.Size(293, 38);
+            this.ticketPriceTxt.Size = new System.Drawing.Size(336, 38);
             this.ticketPriceTxt.TabIndex = 55;
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.weekday);
-            this.groupBox1.Controls.Add(this.holiday);
-            this.groupBox1.Location = new System.Drawing.Point(240, 245);
+            this.groupBox1.Controls.Add(this.weekend);
+            this.groupBox1.Location = new System.Drawing.Point(240, 268);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(295, 59);
+            this.groupBox1.Size = new System.Drawing.Size(336, 59);
             this.groupBox1.TabIndex = 54;
             this.groupBox1.TabStop = false;
             // 
@@ -133,27 +133,27 @@ namespace cw_recreation_center
             this.weekday.Text = "Weekday";
             this.weekday.UseVisualStyleBackColor = true;
             // 
-            // holiday
+            // weekend
             // 
-            this.holiday.AutoSize = true;
-            this.holiday.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.holiday.Location = new System.Drawing.Point(196, 23);
-            this.holiday.Margin = new System.Windows.Forms.Padding(4);
-            this.holiday.Name = "holiday";
-            this.holiday.Size = new System.Drawing.Size(92, 25);
-            this.holiday.TabIndex = 9;
-            this.holiday.Text = "Holiday";
-            this.holiday.UseVisualStyleBackColor = true;
+            this.weekend.AutoSize = true;
+            this.weekend.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.weekend.Location = new System.Drawing.Point(207, 16);
+            this.weekend.Margin = new System.Windows.Forms.Padding(4);
+            this.weekend.Name = "weekend";
+            this.weekend.Size = new System.Drawing.Size(112, 25);
+            this.weekend.TabIndex = 9;
+            this.weekend.Text = "Weekend";
+            this.weekend.UseVisualStyleBackColor = true;
             // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.child);
             this.groupBox2.Controls.Add(this.adult);
-            this.groupBox2.Location = new System.Drawing.Point(241, 128);
+            this.groupBox2.Location = new System.Drawing.Point(242, 142);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox2.Size = new System.Drawing.Size(293, 46);
+            this.groupBox2.Size = new System.Drawing.Size(334, 46);
             this.groupBox2.TabIndex = 53;
             this.groupBox2.TabStop = false;
             // 
@@ -178,9 +178,9 @@ namespace cw_recreation_center
             this.adult.Location = new System.Drawing.Point(205, 14);
             this.adult.Margin = new System.Windows.Forms.Padding(4);
             this.adult.Name = "adult";
-            this.adult.Size = new System.Drawing.Size(76, 25);
+            this.adult.Size = new System.Drawing.Size(116, 25);
             this.adult.TabIndex = 7;
-            this.adult.Text = "Adult";
+            this.adult.Text = "Adult(>12)";
             this.adult.UseVisualStyleBackColor = true;
             // 
             // groupTxt
@@ -208,10 +208,10 @@ namespace cw_recreation_center
             "Group of 30",
             "Group of 50",
             "Group of 100"});
-            this.groupTxt.Location = new System.Drawing.Point(240, 320);
+            this.groupTxt.Location = new System.Drawing.Point(240, 355);
             this.groupTxt.Margin = new System.Windows.Forms.Padding(4);
             this.groupTxt.Name = "groupTxt";
-            this.groupTxt.Size = new System.Drawing.Size(293, 29);
+            this.groupTxt.Size = new System.Drawing.Size(336, 29);
             this.groupTxt.TabIndex = 52;
             this.groupTxt.Text = "-- Select Group --";
             // 
@@ -226,10 +226,10 @@ namespace cw_recreation_center
             "3 hour ",
             "4 hour ",
             "Unlimited"});
-            this.durationTxt.Location = new System.Drawing.Point(240, 199);
+            this.durationTxt.Location = new System.Drawing.Point(240, 215);
             this.durationTxt.Margin = new System.Windows.Forms.Padding(4);
             this.durationTxt.Name = "durationTxt";
-            this.durationTxt.Size = new System.Drawing.Size(293, 29);
+            this.durationTxt.Size = new System.Drawing.Size(345, 29);
             this.durationTxt.TabIndex = 51;
             this.durationTxt.Text = "-- Duration --";
             this.durationTxt.UseWaitCursor = true;
@@ -237,7 +237,7 @@ namespace cw_recreation_center
             // label4
             // 
             this.label4.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(33, 134);
+            this.label4.Location = new System.Drawing.Point(33, 142);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(135, 39);
@@ -248,7 +248,7 @@ namespace cw_recreation_center
             // label3
             // 
             this.label3.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(33, 191);
+            this.label3.Location = new System.Drawing.Point(33, 209);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(135, 39);
@@ -259,7 +259,7 @@ namespace cw_recreation_center
             // dayLabel
             // 
             this.dayLabel.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dayLabel.Location = new System.Drawing.Point(33, 245);
+            this.dayLabel.Location = new System.Drawing.Point(4, 277);
             this.dayLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.dayLabel.Name = "dayLabel";
             this.dayLabel.Size = new System.Drawing.Size(135, 39);
@@ -270,7 +270,7 @@ namespace cw_recreation_center
             // label5
             // 
             this.label5.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(33, 311);
+            this.label5.Location = new System.Drawing.Point(14, 355);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(135, 39);
@@ -296,14 +296,14 @@ namespace cw_recreation_center
             this.ticketIdText.Margin = new System.Windows.Forms.Padding(4);
             this.ticketIdText.Multiline = true;
             this.ticketIdText.Name = "ticketIdText";
-            this.ticketIdText.Size = new System.Drawing.Size(293, 38);
+            this.ticketIdText.Size = new System.Drawing.Size(336, 38);
             this.ticketIdText.TabIndex = 45;
             // 
             // AddTicket
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.PowderBlue;
+            this.BackColor = System.Drawing.Color.Snow;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Controls.Add(this.label2);
             this.Controls.Add(this.ticketPriceTxt);
@@ -321,7 +321,7 @@ namespace cw_recreation_center
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.label1);
             this.Name = "AddTicket";
-            this.Size = new System.Drawing.Size(617, 589);
+            this.Size = new System.Drawing.Size(939, 719);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -339,7 +339,7 @@ namespace cw_recreation_center
         private System.Windows.Forms.TextBox ticketPriceTxt;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.RadioButton weekday;
-        private System.Windows.Forms.RadioButton holiday;
+        private System.Windows.Forms.RadioButton weekend;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.RadioButton child;
         private System.Windows.Forms.RadioButton adult;

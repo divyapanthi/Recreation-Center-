@@ -26,7 +26,7 @@ namespace cw_recreation_center
 
         private void BtnEmployee_Click(object sender, EventArgs e)
         {
-            visitor_form form = new visitor_form();
+            VisitorForm form = new VisitorForm();
             form.Show();
         }
     }

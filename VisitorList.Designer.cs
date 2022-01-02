@@ -74,10 +74,11 @@ namespace cw_recreation_center
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.Controls.Add(this.visitorsDetails);
             this.Controls.Add(this.panel1);
             this.Name = "VisitorList";
-            this.Size = new System.Drawing.Size(892, 525);
+            this.Size = new System.Drawing.Size(892, 716);
             ((System.ComponentModel.ISupportInitialize)(this.visitorsDetails)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

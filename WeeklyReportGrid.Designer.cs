@@ -46,7 +46,7 @@ namespace cw_recreation_center
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(938, 62);
+            this.panel1.Size = new System.Drawing.Size(948, 62);
             this.panel1.TabIndex = 11;
             // 
             // label1
@@ -91,7 +91,7 @@ namespace cw_recreation_center
             this.dataGridViewVisitor.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridViewVisitor.Name = "dataGridViewVisitor";
             this.dataGridViewVisitor.RowHeadersWidth = 51;
-            this.dataGridViewVisitor.Size = new System.Drawing.Size(821, 278);
+            this.dataGridViewVisitor.Size = new System.Drawing.Size(821, 375);
             this.dataGridViewVisitor.TabIndex = 8;
             // 
             // label2
@@ -132,7 +132,7 @@ namespace cw_recreation_center
             this.Controls.Add(this.dateTimePickerChoose);
             this.Controls.Add(this.dataGridViewVisitor);
             this.Name = "WeeklyReportGrid";
-            this.Size = new System.Drawing.Size(941, 559);
+            this.Size = new System.Drawing.Size(954, 756);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewVisitor)).EndInit();

@@ -62,7 +62,7 @@ namespace cw_recreation_center
             // 
             this.ticketRates.BackgroundColor = System.Drawing.Color.AliceBlue;
             this.ticketRates.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.ticketRates.Location = new System.Drawing.Point(22, 91);
+            this.ticketRates.Location = new System.Drawing.Point(36, 106);
             this.ticketRates.Margin = new System.Windows.Forms.Padding(4);
             this.ticketRates.Name = "ticketRates";
             this.ticketRates.RowHeadersWidth = 51;
@@ -78,7 +78,7 @@ namespace cw_recreation_center
             this.Controls.Add(this.ticketRates);
             this.Controls.Add(this.panel1);
             this.Name = "TicketList";
-            this.Size = new System.Drawing.Size(938, 512);
+            this.Size = new System.Drawing.Size(938, 746);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ticketRates)).EndInit();

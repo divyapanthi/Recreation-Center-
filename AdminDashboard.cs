@@ -32,7 +32,6 @@ namespace cw_recreation_center
         public void SetActivePanel(UserControl userControl) {
             dashboard1.Visible = false;
             addTicket1.Visible = false;
-          
             userControl.Visible = true;
         }
 
@@ -41,10 +40,9 @@ namespace cw_recreation_center
             SetActivePanel(dashboard1);
         }
 
-        private void BtnDailyReport_Click(object sender, EventArgs e)
+        private void btnVisitorList_Click(object sender, EventArgs e)
         {
-            SetActivePanel(addTicket1);
-        }
 
+        }
     }
 }

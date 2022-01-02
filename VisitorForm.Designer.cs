@@ -1,7 +1,7 @@
 ﻿
 namespace cw_recreation_center
 {
-    partial class visitor_form
+    partial class VisitorForm
     {
         /// <summary>
         /// Required designer variable.
@@ -123,12 +123,14 @@ namespace cw_recreation_center
             this.comboGroup.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboGroup.FormattingEnabled = true;
             this.comboGroup.Items.AddRange(new object[] {
-            "-Select Group-",
-            "1",
-            "5",
-            "10",
-            "15",
-            "20"});
+            "No Group ",
+            "Group of 5 ",
+            "Group of 10",
+            "Group of 15",
+            "Group of 20",
+            "Group of 30",
+            "Group of 50",
+            "Group of 100"});
             this.comboGroup.Location = new System.Drawing.Point(133, 288);
             this.comboGroup.Name = "comboGroup";
             this.comboGroup.Size = new System.Drawing.Size(191, 28);
@@ -230,7 +232,7 @@ namespace cw_recreation_center
             this.btnClear.TabIndex = 48;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = false;
-            this.btnClear.Click += new System.EventHandler(this.BtnClear_Click);
+            this.btnClear.Click += new System.EventHandler(this.buttonClear_Click);
             // 
             // btnSave
             // 
@@ -243,7 +245,7 @@ namespace cw_recreation_center
             this.btnSave.TabIndex = 47;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
-            this.btnSave.Click += new System.EventHandler(this.BtnSave_Click);
+            this.btnSave.Click += new System.EventHandler(this.Save_Click);
             // 
             // panel1
             // 
@@ -393,12 +395,11 @@ namespace cw_recreation_center
             this.comboDuration.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboDuration.FormattingEnabled = true;
             this.comboDuration.Items.AddRange(new object[] {
-            "-Select Group-",
-            "1",
-            "5",
-            "10",
-            "15",
-            "20"});
+            "1 hour ",
+            "2 hour ",
+            "3 hour ",
+            "4 hour ",
+            "Unlimited"});
             this.comboDuration.Location = new System.Drawing.Point(133, 350);
             this.comboDuration.Name = "comboDuration";
             this.comboDuration.Size = new System.Drawing.Size(191, 28);
@@ -432,7 +433,7 @@ namespace cw_recreation_center
             this.label1.TabIndex = 60;
             this.label1.Text = "No.of Visitors";
             // 
-            // visitor_form
+            // VisitorForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -464,7 +465,7 @@ namespace cw_recreation_center
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
-            this.Name = "visitor_form";
+            this.Name = "VisitorForm";
             this.Text = "Visitor Form";
             this.TransparencyKey = System.Drawing.Color.MistyRose;
             this.groupBox2.ResumeLayout(false);

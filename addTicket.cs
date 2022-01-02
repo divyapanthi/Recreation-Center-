@@ -40,7 +40,7 @@ namespace cw_recreation_center
                 {
                     day = "weekday";
                 }
-                if (holiday.Checked)
+                if (weekend.Checked)
                 {
                     day = "holiday";
 
@@ -52,7 +52,9 @@ namespace cw_recreation_center
                 ticket.Day = day;
                 ticket.Duration = duration;
                 VaidationCheck(ticket);
-               
+                MessageBox.Show("Ticket Added Successfully.");
+
+
             }
             catch (Exception error)
             {
@@ -89,6 +91,7 @@ namespace cw_recreation_center
                                     ticketList.Add(ticket);
                                     string data = JsonConvert.SerializeObject(ticketList);
                                     TicketUtility.WriteToText(data);
+                                    Clear();
                                 }
                             }
                         }
@@ -100,17 +103,20 @@ namespace cw_recreation_center
         }
 
 
-        private void BtnClear_Click(object sender, EventArgs e)
-        {
+        private void Clear() {
             ticketIdText.Text = null;
             child.Checked = false;
             adult.Checked = false;
             durationTxt.SelectedIndex = -1;
             durationTxt.Text = "--Select Duration --";
             weekday.Checked = false;
-            holiday.Checked = false;
+            weekend.Checked = false;
             groupTxt.SelectedIndex = -1;
             groupTxt.Text = "--Select Group --";
+        }
+        private void BtnClear_Click(object sender, EventArgs e)
+        {
+            Clear();
         }
 
       

@@ -9,12 +9,12 @@ namespace cw_recreation_center
 {
     class VisitorUtility
     {
-        private static string _filePath = "visitor.txt";
+        private static string _filePath = "VisitorDetails.txt";
         public static string WriteToText(string data)
         {
             if (File.Exists(_filePath))
             {
-                using (File.Create(_filePath)) ;
+                using (File.Create(_filePath));
             }
 
             using (StreamWriter outputFile = new StreamWriter(_filePath))

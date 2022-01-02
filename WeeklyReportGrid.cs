@@ -140,5 +140,7 @@ namespace cw_recreation_center
             List<Report> reportList = report.SortByTotalEarningDesc(Reports());
             LoadGrid(reportList);
         }
+
+       
     }
 }

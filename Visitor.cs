@@ -30,13 +30,6 @@ namespace cw_recreation_center
         public String CheckOutTime { get; set; }
 
         public float TicketPrice { get; set; }
-        public void Run()
-        {
-            Console.WriteLine(VisitorId);
-            Console.WriteLine(Duration);
-            Console.WriteLine(Day);
-            Console.WriteLine(GroupOf);
-            Console.WriteLine(AgeGroup);
-        }
+     
     }
 }

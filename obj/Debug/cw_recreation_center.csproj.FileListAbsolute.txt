@@ -6,7 +6,6 @@ D:\.NET Projects\Coursework\cw_recreation_center\obj\Debug\cw_recreation_center.
 D:\.NET Projects\Coursework\cw_recreation_center\obj\Debug\cw_recreation_center.csproj.CoreCompileInputs.cache
 D:\.NET Projects\Coursework\cw_recreation_center\obj\Debug\cw_recreation_center.exe
 D:\.NET Projects\Coursework\cw_recreation_center\obj\Debug\cw_recreation_center.pdb
-D:\.NET Projects\Coursework\cw_recreation_center\obj\Debug\cw_recreation_center.visitor_form.resources
 D:\.NET Projects\Coursework\cw_recreation_center\obj\Debug\cw_recreation_center.main.resources
 D:\.NET Projects\Coursework\cw_recreation_center\obj\Debug\cw_recreation_center.AdminLoginForm.resources
 D:\.NET Projects\Coursework\cw_recreation_center\obj\Debug\cw_recreation_center.AdminDashboard.resources
@@ -16,8 +15,8 @@ D:\.NET Projects\Coursework\cw_recreation_center\bin\Debug\Newtonsoft.Json.dll
 D:\.NET Projects\Coursework\cw_recreation_center\bin\Debug\Newtonsoft.Json.xml
 D:\.NET Projects\Coursework\cw_recreation_center\obj\Debug\cw_recreation_center.csproj.CopyComplete
 D:\.NET Projects\Coursework\cw_recreation_center\obj\Debug\cw_recreation_center.ViewReport.resources
-D:\.NET Projects\Coursework\cw_recreation_center\obj\Debug\cw_recreation_center.csproj.AssemblyReference.cache
 D:\.NET Projects\Coursework\cw_recreation_center\obj\Debug\cw_recreation_center.TicketList.resources
 D:\.NET Projects\Coursework\cw_recreation_center\obj\Debug\cw_recreation_center.VisitorList.resources
 D:\.NET Projects\Coursework\cw_recreation_center\obj\Debug\cw_recreation_center.WeeklyReportGrid.resources
 D:\.NET Projects\Coursework\cw_recreation_center\obj\Debug\cw_recreation_center.WeeklyVisitorChart.resources
+D:\.NET Projects\Coursework\cw_recreation_center\obj\Debug\cw_recreation_center.VisitorForm.resources
