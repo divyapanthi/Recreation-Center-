@@ -68,7 +68,7 @@ namespace cw_recreation_center
             series1.Name = "Total Earning";
             series2.ChartArea = "ChartArea1";
             series2.Legend = "Legend1";
-            series2.Name = "Number of Visitor";
+            series2.Name = "Number of Visitors";
             this.weeklyVisitorReportChart.Series.Add(series1);
             this.weeklyVisitorReportChart.Series.Add(series2);
             this.weeklyVisitorReportChart.Size = new System.Drawing.Size(788, 468);

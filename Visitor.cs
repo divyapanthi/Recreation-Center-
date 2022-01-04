@@ -14,7 +14,6 @@ namespace cw_recreation_center
         }
         public String VisitorId { get; set; }
         public String VisitorName { get; set; }
-        public String PhoneNum { get; set; }
         public String AgeGroup { get; set; }
         public String GroupOf { get; set; }
 

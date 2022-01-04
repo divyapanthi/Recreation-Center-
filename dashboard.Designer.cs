@@ -41,7 +41,7 @@ namespace cw_recreation_center
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.SteelBlue;
-            this.label2.Location = new System.Drawing.Point(212, 261);
+            this.label2.Location = new System.Drawing.Point(208, 294);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(481, 47);
             this.label2.TabIndex = 8;
@@ -52,15 +52,16 @@ namespace cw_recreation_center
             this.dashboardBox.Image = ((System.Drawing.Image)(resources.GetObject("dashboardBox.Image")));
             this.dashboardBox.Location = new System.Drawing.Point(-52, -90);
             this.dashboardBox.Name = "dashboardBox";
-            this.dashboardBox.Size = new System.Drawing.Size(939, 660);
+            this.dashboardBox.Size = new System.Drawing.Size(939, 845);
             this.dashboardBox.TabIndex = 7;
             this.dashboardBox.TabStop = false;
+            this.dashboardBox.Click += new System.EventHandler(this.dashboardBox_Click);
             // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(878, 557);
+            this.ClientSize = new System.Drawing.Size(887, 701);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dashboardBox);
             this.Name = "Dashboard";

@@ -47,8 +47,6 @@ namespace cw_recreation_center
             childForm.Dock = DockStyle.Fill;
             panelDashboard.Controls.Add(childForm);
             panelDashboard.Tag = childForm;
-            panelAddTicket.Controls.Add(childForm);
-            panelAddTicket.Tag = childForm;
             childForm.BringToFront();
             childForm.Show();
         }
@@ -73,6 +71,11 @@ namespace cw_recreation_center
         private void WeeklyVisitorChart_Click(object sender, EventArgs e)
         {
             openChildForm(new WeeklyVisitorChart());
+        }
+
+        private void AdminDashboard_Load(object sender, EventArgs e)
+        {
+            openChildForm(new Dashboard());
         }
     }
 }

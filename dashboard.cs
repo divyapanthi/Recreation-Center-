@@ -16,5 +16,10 @@ namespace cw_recreation_center
         {
             InitializeComponent();
         }
+
+        private void dashboardBox_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

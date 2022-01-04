@@ -18,10 +18,7 @@ namespace cw_recreation_center
             InitializeComponent();
         }
 
-      
-
-   
-
+     
         private void Save_Click(object sender, EventArgs e)
         {
             string id = txtVisitorId.Text;
@@ -200,12 +197,7 @@ namespace cw_recreation_center
             string data = JsonConvert.SerializeObject(visitors);
             VisitorUtility.WriteToText(data);
         }
-
-        private void visitorListToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            VisitorList list = new VisitorList();
-            list.Show();
-        }
+        
         public void Clear() {
             txtVisitorsNo.Text = null;
             txtName.Text = null;
